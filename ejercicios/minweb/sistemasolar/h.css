@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/galaxia.jpg'); /* Asegúrate de tener una imagen de galaxia en esta ruta */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Estilo para los encabezados principales */
+  h1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffa500;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #00ffff;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 2em;
+  }
+  
+  /* Estilo para los párrafos */
+  p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Estilo para las imágenes */
+  img {
+    border: 3px solid #00ffff;
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 90%;
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para la lista de enlaces */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo para los elementos de la lista */
+  ul a {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  ul a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Estilo para la sección de planetas gaseosos */
+  h2 + a {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para la sección de otros elementos */
+  h2:last-of-type {
+    margin-top: 40px;
+  }
