@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Jesus Panadero" content=".">
+    <title>Cajas</title>
+</head>
+<style>
+
+.caja {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+
+.caja1 {
+  background-color: rgb(226, 198, 198);
+  border-color: black;
+  border-style: dotted;
+  border-width: 5px;
+  padding-top: 10%;
+  padding-left: 10%;
+
+}
+
+.caja2 {
+    background-color: rgb(212, 182, 46);
+    border-left: 80px;
+    border-color: black;
+    border-style: solid;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.caja3 {
+    background-color: #f28b82;
+    border: 20px groove #8e4a49;
+    border-radius: 10px;
+}
+
+.caja4 { 
+    background-color: #a0d995;
+    border: 20px inset #1c3d2d;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+  
+}
+.interrogacion {
+    background-color: peachpuff;
+    border: 30px dashed orange;
+    border-radius: 80%;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+
+}
+.caja5 {
+    background-color: #d1c4e9;
+    border: 15px outset darkblue;
+}
+
+.caja6 {
+    background: linear-gradient(to top, red, yellow);
+    border: 5px solid rgb(128, 0, 0);
+}
+
+.caja7 {
+    background-color: white;
+    border: 30px solid;
+    border-color: blue red green yellow;
+}
+.caja8 {
+    background-color: white;
+    border: 30px double purple;
+    border-radius: 50px;
+}
+
+
+
+
+
+</style>
+
+    <body>
+        <table>
+            <tr>
+                <td><div class="caja caja1">Contenido de la caja 1</div></td>
+                <td><div class="caja caja2">Contenido de la caja 2</div></td>
+                <td><div class="caja caja3">Contenido de la caja 3</div></td>
+            </tr>  
+            <tr>
+                <td><div class="caja caja4">Contenido de la caja 4</div></td>
+                <td><div class="interrogacion">?</div></td>
+                <td><div class="caja caja5">Contenido de la caja 5</div></td>
+            </tr>
+            <tr>
+                <td><div class="caja caja6">Contenido de la caja 6</div></td>
+                <td><div class="caja caja7">Contenido de la caja 7</div></td>
+                <td> <div class="caja caja8">Contenido de la caja 8</div></td>
+            </tr>
+
+        </table>
+      </body>
+    </html>
