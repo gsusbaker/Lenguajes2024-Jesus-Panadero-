@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a3000;
+    background-color: pink;
     padding: 14px 20px;
     color: white;
 }
@@ -26,7 +26,7 @@ nav, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ffc400;
+    background-color: hotpink;
     padding: 5px 0;
 }
 
@@ -38,7 +38,7 @@ nav a {
 }
 
 footer {
-    background-color: #ffc400;
+    background-color: hotpink;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -55,24 +55,23 @@ footer {
 }
 
 .casilla {
-    display: grid; /* Activar Grid dentro de cada casilla */
-    place-items: center; /* Centra el contenido tanto vertical como horizontal */
+    display: grid; 
+    place-items: center; 
     width: 100px;
     height: 100px;
-    background-size: cover; /* Ajusta el fondo a la celda */
+    background-size: cover; 
 }
 
 .blanca {
-    background-color: #256132;
+    background-color: whitesmoke;
 }
 
 .negra {
-    background-color: #00ff37;
+    background-color: red
 }
 
 .horizontal{
     background-color: #a5a5a5;
-    /* Configuración texto */
     color: #180e01;
     font-weight: bold;
     text-align: center; 
@@ -81,7 +80,6 @@ footer {
 
 .vertical{
     background-color: #a5a5a5;
-    /* Configuración texto */
     color: #180e01;
     font-weight: bold;
     text-align: center; 

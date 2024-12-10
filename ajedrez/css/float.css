@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a3000;
+    background-color: goldenrod;
     padding: 14px 20px;
     color: white;
 }
@@ -26,7 +26,7 @@ nav, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ffc400;
+    background-color: greenyellow;
     padding: 5px 0;
 }
 
@@ -38,7 +38,7 @@ nav a {
 }
 
 footer {
-    background-color: #ffc400;
+    background-color: greenyellow;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -75,7 +75,7 @@ img{
 
 .horizontal{
     color: #e2cbac;
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover;
     font-size: 30px;
     text-align: center;
@@ -84,7 +84,7 @@ img{
 
 .vertical{
     color: #e2cbac;
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover; 
     font-size: 30px;
     text-align: center; 
@@ -92,26 +92,23 @@ img{
 }
 
 .esquina1{
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover; 
 }
 
 .esquina2{
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover; 
 }
 
 .esquina3{
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover; 
 }
 
 .esquina4{
-    background-color: #7134b6;
+    background-color: orange;
     background-size: cover; 
 }
 
-.clear {
-    clear: left;
-}
 
