@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a3000;
+    padding: 14px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+h2 {
+    padding: 20px 0; /* Espacio arriba y abajo pero sin darselo a los laterales */
+    color: #000000;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces */
+    gap: 20px; /* Añade espacio entre los enlaces */
+    background-color: #a5a5a5; 
+    padding: 5px 0;  /* Altura a la barra */
+}
+
+
+nav, a {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffc400;
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+.tablero {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse; /*Elimina el espacio entre celdas */
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.casilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    /*Configuración texto*/
+    text-align: center;
+    font-size: 30px;
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.blanca {
+    background-color: #e6000033; }
+
+.negra {
+    background-color: #77777733; }
+
+.horizontal{
+    background-color: #ff00ff3f; }
+
+
+.vertical{
+   
+    background-color: #ff00ff3f; }
+
+.esquina1{
+    background-color: #ff00ff3f; }
+
+.esquina2{
+    background-color: #ff00ff3f; }
+
+.esquina3{
+    background-color: #ff00ff3f; }
+
+.esquina4{
+    background-color: #ff00ff3f; }
+
+
+    footer {
+        background-color: #ffc400;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+      }

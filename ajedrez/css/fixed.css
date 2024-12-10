@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a3000;
+    padding: 14px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+nav, a {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffc400;
+    padding: 5px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+   
+}
+
+footer {
+    background-color: #ffc400;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  .blanca {
+    background-size: cover;
+    background-color: #F5DEB3; 
+}
+
+.negra {
+    background-size: cover;
+    background-color: #8B4513;
+}
+
+.horizontal {
+    background-size: cover;
+    color: #663300; 
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.vertical {
+    color: #663300; 
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.esquina1 {
+
+}
+.esquina2 {
+
+}
+.esquina3 {
+
+}
+.esquina4 {
+    
+   
+}
+
+.tablero {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.casilla {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
+.fila {
+    top: 0px;
+}
+
+.casilla1 { 
+    left: 0px; 
+}
+
+.casilla2 { 
+    left: 100px; 
+}
+
+.casilla3 { 
+    left: 200px; 
+}
+
+.casilla4 { 
+    left: 300px; 
+}
+
+.casilla5 { 
+    left: 400px; 
+}
+
+.casilla6 { 
+    left: 500px; 
+}
+
+.casilla7 { 
+    left: 600px; 
+}
+
+.casilla8 { 
+    left: 700px; 
+}
+
+.casilla9 { 
+    left: 800px; 
+}
+.casilla10 { 
+    left: 900px; 
+}
+
+.fila1 { 
+    top: 0px; 
+}
+
+.fila2 { 
+    top: 100px; 
+}
+
+.fila3 { 
+    top: 200px; 
+}
+
+.fila4 { 
+    top: 300px; 
+}
+
+.fila5 { 
+    top: 400px; 
+}
+
+.fila6 { 
+    top: 500px; 
+}
+
+.fila7 { 
+    top: 600px; 
+}
+
+.fila8 { 
+    top: 700px; 
+}
+
+.fila9 { 
+    top: 800px; 
+}
+
+.fila10 { 
+    top: 900px; 
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

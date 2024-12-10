@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a3000;
+    padding: 14px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+nav, a {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffc400;
+    padding: 5px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+   
+}
+
+footer {
+    background-color: #ffc400;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+
+.tablero {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; 
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; 
+    gap: 0;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+}
+
+.casilla {
+    display: grid; /* Activar Grid dentro de cada casilla */
+    place-items: center; /* Centra el contenido tanto vertical como horizontal */
+    width: 100px;
+    height: 100px;
+    background-size: cover; /* Ajusta el fondo a la celda */
+}
+
+.blanca {
+    background-color: #256132;
+}
+
+.negra {
+    background-color: #00ff37;
+}
+
+.horizontal{
+    background-color: #a5a5a5;
+    /* Configuración texto */
+    color: #180e01;
+    font-weight: bold;
+    text-align: center; 
+    font-size: 30px;
+}
+
+.vertical{
+    background-color: #a5a5a5;
+    /* Configuración texto */
+    color: #180e01;
+    font-weight: bold;
+    text-align: center; 
+    font-size: 30px;
+}
+
+.esquina1{
+    background-color: #a5a5a5;
+}
+
+.esquina2{
+    background-color: #a5a5a5;
+}
+
+.esquina3{
+    background-color: #a5a5a5;
+}
+
+.esquina4{
+    background-color: #a5a5a5;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
