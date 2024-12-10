@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a3000;
+    background-color: blue;
     padding: 14px 20px;
     color: white;
 }
@@ -23,17 +23,17 @@ header h1 {
 }
 
 h2 {
-    padding: 20px 0; /* Espacio arriba y abajo pero sin darselo a los laterales */
+    padding: 20px 0;
     color: #000000;
     text-align: center;
 }
 
 nav {
     display: flex;
-    justify-content: center;  /* Centra los enlaces */
-    gap: 20px; /* Añade espacio entre los enlaces */
-    background-color: #a5a5a5; 
-    padding: 5px 0;  /* Altura a la barra */
+    justify-content: center;  
+    gap: 20px; 
+    background-color: whitesmoke; 
+    padding: 5px 0;  
 }
 
 
@@ -41,7 +41,7 @@ nav, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ffc400;
+    background-color:darkblue;
     padding: 5px 0;
     text-decoration: none;
     color: white;
@@ -58,7 +58,7 @@ nav a:hover {
     margin: auto;
     display: flex;
     flex-direction: column;
-    border-collapse: collapse; /*Elimina el espacio entre celdas */
+    border-collapse: collapse; 
 }
 
 .fila {
@@ -71,17 +71,14 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: 100px; /* Ajusta el tamaño según sea necesario */
-    /*Configuración texto*/
+    width: 100px; 
+    height: 100px; 
+    
     text-align: center;
     font-size: 30px;
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-size: cover; 
 }
 
-/*/////////////////////////*/
-/* CONFIGURACIÓN ADICIONAL*/
-/*///////////////////////*/
 
 img{
     width: 100px;
@@ -89,34 +86,34 @@ img{
 }
 
 .blanca {
-    background-color: #e6000033; }
+    background-color:cornflowerblue; }
 
 .negra {
-    background-color: #77777733; }
+    background-color: violet; }
 
 .horizontal{
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 
 .vertical{
    
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 .esquina1{
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 .esquina2{
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 .esquina3{
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 .esquina4{
-    background-color: #ff00ff3f; }
+    background-color: darkcyan; }
 
 
     footer {
-        background-color: #ffc400;
+        background-color:darkblue;
         color: #fff;
         padding: 30px;
         text-align: center;

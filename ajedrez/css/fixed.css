@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a3000;
+    background-color:black;
     padding: 14px 20px;
     color: white;
 }
@@ -26,7 +26,7 @@ nav, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ffc400;
+    background-color: firebrick;
     padding: 5px 0;
 }
 
@@ -38,19 +38,19 @@ nav a {
 }
 
 footer {
-    background-color: #ffc400;
+    background-color: firebrick;
     color: #fff;
     padding: 30px;
     text-align: center;
   }
   .blanca {
     background-size: cover;
-    background-color: #F5DEB3; 
+    background-color: rebeccapurple; 
 }
 
 .negra {
     background-size: cover;
-    background-color: #8B4513;
+    background-color: palegreen;
 }
 
 .horizontal {
@@ -71,19 +71,7 @@ footer {
     line-height: 100px;
 }
 
-.esquina1 {
 
-}
-.esquina2 {
-
-}
-.esquina3 {
-
-}
-.esquina4 {
-    
-   
-}
 
 .tablero {
     position: relative;
@@ -148,39 +136,39 @@ footer {
 }
 
 .fila2 { 
-    top: 100px; 
+    top:10px; 
 }
 
 .fila3 { 
-    top: 200px; 
+    top: 100px; 
 }
 
 .fila4 { 
-    top: 300px; 
+    top: 200px; 
 }
 
 .fila5 { 
-    top: 400px; 
+    top: 300px; 
 }
 
 .fila6 { 
-    top: 500px; 
+    top: 400px; 
 }
 
 .fila7 { 
-    top: 600px; 
+    top: 500px; 
 }
 
 .fila8 { 
-    top: 700px; 
+    top: 600px; 
 }
 
 .fila9 { 
-    top: 800px; 
+    top: 700px; 
 }
 
 .fila10 { 
-    top: 900px; 
+    top: 800px; 
 }
 
 img{
