@@ -1,0 +1,28 @@
+*{
+    height: 100%;
+}
+div.azul{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+div.rojo{
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+div.verde{
+    background-color:rgb(0, 255, 76);
+    width: 50%;
+    height: 50%;
+    clear: both;
+    float: left;
+}
+div.amarillo{
+    background-color:yellow;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
