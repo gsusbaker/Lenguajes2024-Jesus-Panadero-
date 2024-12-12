@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    min-height: 100vh;
     text-align: center;
     padding: 20px;
-    line-height: 1.6; /* Altura de las línea del texto */
+    line-height: 1.6; 
 }
 
 .header {
@@ -29,7 +29,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 5px;
-    margin: 0 auto; /* Alinea el contenedor horizontalmente */
+    margin: 0 auto; 
 }
 
 .diseñoazul {
@@ -39,7 +39,6 @@ body {
     font-weight: bold;   
     align-items: center;
     justify-content: center;
-    /*Altura columnas*/
     height: 100px;
 }
 
@@ -50,7 +49,7 @@ body {
     font-weight: bold;   
     align-items: center;
     justify-content: center;
-    /*Altura columnas*/
+ 
     height: 100px;
 }
 
@@ -61,7 +60,6 @@ body {
     font-weight: bold;
     grid-column: span 12;
     text-align: center;
-    /*Altura columnas*/
     height: 90px;
 }
 
@@ -86,42 +84,42 @@ body {
 
 /* TERCERA FILA */
 .primerafila {
-    /*División filas*/
+
     grid-column: span 6;
 }
 
 /* CUARTA FILA */
 .segundafila {
-    /*División filas*/
+ 
     grid-column: span 4; 
 }
 
 /* QUINTA FILA */
 .cuarto {
-    /*División filas*/
+ 
     grid-column: span 3; 
 }
 
 /* SEXTA FILA */
 .sexto {
-    /*División filas*/
+ 
     grid-column: span 2;
 }
 
 .division1 {
-    /*División filas*/
+ 
     grid-column: span 1; 
 }
 
 .division2 {
-    /*División filas*/
+    
     grid-column: span 2; 
 }
 
 .division3 {
-    /*Altura filas*/
+   
     height: 100px;
-    /*División filas*/
+   
     grid-column: span 3; 
 }
 
