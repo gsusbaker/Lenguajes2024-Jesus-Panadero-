@@ -1,9 +1,4 @@
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-}
+
 
 nav ul li {
     margin: 10px;
@@ -59,3 +54,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
