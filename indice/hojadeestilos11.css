@@ -1,0 +1,63 @@
+
+
+nav ul li {
+    margin: 10px;
+    flex: 1 1 45%;  
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    color: #0082fc;
+    border-radius: 5px;
+
+    
+}
+
+nav ul li a:hover {
+    background-color: white;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/abstract-black-background-with-diagonal-lines-modern-dark-abstract-texture-design-for-presentations-or-business-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(7, 7, 51);
+    color: white;
+    position: sticky;
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 25px;
+    position:  sticky;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(7, 7, 51) ;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
