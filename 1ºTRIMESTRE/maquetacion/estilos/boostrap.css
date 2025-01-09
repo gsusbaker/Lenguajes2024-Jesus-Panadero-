@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6; 
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #002c54;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: 0 auto; 
+}
+
+.diseñoazul {
+    display: grid;
+    background-color: #4e8df5;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.diseñoblanco {
+    display: grid;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+ 
+    height: 100px;
+}
+
+
+.cabecera {
+    background-color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    grid-column: span 12;
+    text-align: center;
+    height: 90px;
+}
+
+.cabecera p {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.numeros {
+    background-color: white;
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+.primerafila {
+
+    grid-column: span 6;
+}
+
+
+.segundafila {
+ 
+    grid-column: span 4; 
+}
+
+
+.cuarto {
+ 
+    grid-column: span 3; 
+}
+
+.sexto {
+ 
+    grid-column: span 2;
+}
+
+.division1 {
+ 
+    grid-column: span 1; 
+}
+
+.division2 {
+    
+    grid-column: span 2; 
+}
+
+.division3 {
+   
+    height: 100px;
+   
+    grid-column: span 3; 
+}
+
+.division4 {
+    grid-column: span 4; 
+}

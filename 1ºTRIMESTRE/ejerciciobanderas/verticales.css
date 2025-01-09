@@ -1,0 +1,37 @@
+#italia{
+    background-image: linear-gradient( 90deg, green 33%, white 33%, white 66.66%, red 66.66%);
+}
+ #nigeria{
+    background-image:linear-gradient(90deg, green 33%, white 33%, white 66.66%, green 66.66%);
+ }
+
+ #camerun{
+    background-image:linear-gradient(90deg, green 33%, red 33%, red 66.66%, yellow 66.66%);
+ }
+ #francia{
+    background-image:linear-gradient(90deg, blue 33%, white 33%, white 66.66%, red 66.66%);
+ }
+
+ #belgica{
+    background-image:linear-gradient(90deg, black 33%, yellow 33%, yellow 66.66%, red 66.66%);
+
+ }
+
+ #rumania{
+    background-image:linear-gradient(90deg, blue 33%, yellow 33%, yellow 66.66%, red 66.66%);
+
+ }
+ #costademarfil{
+    background-image:linear-gradient(90deg, orange 33%, white 33%, white 66.66%, green 66.66%);
+ }
+
+ #irlanda{
+    background-image:linear-gradient(90deg, green 33%, white 33%, white 66.66%, orange 66.66%);
+ }
+  
+ #peru{
+    background-image:linear-gradient(90deg, red 33%, white 33%, white 66.66%, red 66.66%);
+ }
+ #ghinea{
+    background-image:linear-gradient(90deg, red 33%, yellow 33%, yellow 66.66%, green 66.66%);
+ }

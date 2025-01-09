@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" >
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de contacto</title>
+    <meta name="author" content="Jesús Panadero Pérez">
+</head>
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Contenedor principal */
+div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Título y párrafo */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+
+textarea:focus {
+    border-color: #7fff00;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #7fff00;
+    border: none;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5fbf00;
+}
+
+</style>
+<body>
+    <a href="/index.html" class="logo">
+        <img src="../images/MEDAC (1).jpg" alt="Logo">
+    </a>
+    <div>
+        <h1>Formulario de contacto</h1>
+        <p>Rellena el formulario.</p>
+        <form method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required placeholder="Escribe tu nombre"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Escribe tu email"><br>
+
+            <label for="tlf">telefono</label>
+            <input type="tlf" id="tlf" name="tlf" required placeholder="Escribe tu telefono"><br>
+
+            <label for="url">Sitio Web</label>
+            <input type="url" id="url" name="url" required placeholder="Escribe la URL de la Web"><br>
+
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" required placeholder="Escribe un asunto"><br>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required placeholder="Deja aquí tu comentario"></textarea>
+
+            <input type="submit" value="Enviar formulario">
+        </form>
+    </div>
+</body>
+</html>

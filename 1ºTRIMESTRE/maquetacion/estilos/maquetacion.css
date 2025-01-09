@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "menu main derecha"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #fff;
+    border: 1px solid #a8745b;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #fff;
+    border: 1px solid #a8745b;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu div {
+    background-color: #d8a374;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #a8745b;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff;
+    border: 1px solid #a8745b;
+    padding: 10px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.noticias div {
+    background-color: #d8a374;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #a8745b;
+}
+
+.derecha {
+    grid-area: derecha;
+    background-color: #fff;
+    border: 1px solid #a8745b;
+    padding: 10px;
+}
+
+.derecha h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.derecha div {
+    background-color: #d8a374;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #a8745b;
+    margin-bottom: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #fff;
+    border: 1px solid #a8745b;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "menu"
+            "main"
+            "derecha"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu div {
+        flex: 1 1 auto;
+        margin: 5px;
+    }
+
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+}

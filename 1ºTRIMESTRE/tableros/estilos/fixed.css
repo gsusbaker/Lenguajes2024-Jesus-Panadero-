@@ -1,0 +1,369 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(47, 47, 47);
+}
+
+h1 {
+    color: rgb(70, 130, 180);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: rgb(255, 192, 203);
+    border-radius: 15px;
+    padding: 25px;
+    position: sticky;
+    top: 5px;
+}
+
+.tablero {
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.blanca {
+    background-color: #ffcccb;
+}
+
+.negra {
+    background-color: #4682b4; 
+}
+
+.casilla {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+
+
+.fila1.columna1 {
+    top: 0px;
+    left: 0px;
+}
+
+.fila1.columna2 {
+    top: 0px;
+    left: 100px;
+}
+
+.fila1.columna3 {
+    top: 0px;
+    left: 200px;
+}
+
+.fila1.columna4 {
+    top: 0px;
+    left: 300px;
+}
+
+.fila1.columna5 {
+    top: 0px;
+    left: 400px;
+}
+
+.fila1.columna6 {
+    top: 0px;
+    left: 500px;
+}
+
+.fila1.columna7 {
+    top: 0px;
+    left: 600px;
+}
+
+.fila1.columna8 {
+    top: 0px;
+    left: 700px;
+}
+
+.fila2.columna1 {
+    top: 100px;
+    left: 0px;
+}
+
+.fila2.columna2 {
+    top: 100px;
+    left: 100px;
+}
+
+.fila2.columna3 {
+    top: 100px;
+    left: 200px;
+}
+
+.fila2.columna4 {
+    top: 100px;
+    left: 300px;
+}
+
+.fila2.columna5 {
+    top: 100px;
+    left: 400px;
+}
+
+.fila2.columna6 {
+    top: 100px;
+    left: 500px;
+}
+
+.fila2.columna7 {
+    top: 100px;
+    left: 600px;
+}
+
+.fila2.columna8 {
+    top: 100px;
+    left: 700px;
+}
+
+.fila3.columna1 {
+    top: 200px;
+    left: 0px;
+}
+
+.fila3.columna2 {
+    top: 200px;
+    left: 100px;
+}
+
+.fila3.columna3 {
+    top: 200px;
+    left: 200px;
+}
+
+.fila3.columna4 {
+    top: 200px;
+    left: 300px;
+}
+
+.fila3.columna5 {
+    top: 200px;
+    left: 400px;
+}
+
+.fila3.columna6 {
+    top: 200px;
+    left: 500px;
+}
+
+.fila3.columna7 {
+    top: 200px;
+    left: 600px;
+}
+
+.fila3.columna8 {
+    top: 200px;
+    left: 700px;
+}
+
+.fila4.columna1 {
+    top: 300px;
+    left: 0px;
+}
+
+.fila4.columna2 {
+    top: 300px;
+    left: 100px;
+}
+
+.fila4.columna3 {
+    top: 300px;
+    left: 200px;
+}
+
+.fila4.columna4 {
+    top: 300px;
+    left: 300px;
+}
+
+.fila4.columna5 {
+    top: 300px;
+    left: 400px;
+}
+
+.fila4.columna6 {
+    top: 300px;
+    left: 500px;
+}
+
+.fila4.columna7 {
+    top: 300px;
+    left: 600px;
+}
+
+.fila4.columna8 {
+    top: 300px;
+    left: 700px;
+}
+
+.fila5.columna1 {
+    top: 400px;
+    left: 0px;
+}
+
+.fila5.columna2 {
+    top: 400px;
+    left: 100px;
+}
+
+.fila5.columna3 {
+    top: 400px;
+    left: 200px;
+}
+
+.fila5.columna4 {
+    top: 400px;
+    left: 300px;
+}
+
+.fila5.columna5 {
+    top: 400px;
+    left: 400px;
+}
+
+.fila5.columna6 {
+    top: 400px;
+    left: 500px;
+}
+
+.fila5.columna7 {
+    top: 400px;
+    left: 600px;
+}
+
+.fila5.columna8 {
+    top: 400px;
+    left: 700px;
+}
+
+.fila6.columna1 {
+    top: 500px;
+    left: 0px;
+}
+
+.fila6.columna2 {
+    top: 500px;
+    left: 100px;
+}
+
+.fila6.columna3 {
+    top: 500px;
+    left: 200px;
+}
+
+.fila6.columna4 {
+    top: 500px;
+    left: 300px;
+}
+
+.fila6.columna5 {
+    top: 500px;
+    left: 400px;
+}
+
+.fila6.columna6 {
+    top: 500px;
+    left: 500px;
+}
+
+.fila6.columna7 {
+    top: 500px;
+    left: 600px;
+}
+
+.fila6.columna8 {
+    top: 500px;
+    left: 700px;
+}
+
+.fila7.columna1 {
+    top: 600px;
+    left: 0px;
+}
+
+.fila7.columna2 {
+    top: 600px;
+    left: 100px;
+}
+
+.fila7.columna3 {
+    top: 600px;
+    left: 200px;
+}
+
+.fila7.columna4 {
+    top: 600px;
+    left: 300px;
+}
+
+.fila7.columna5 {
+    top: 600px;
+    left: 400px;
+}
+
+.fila7.columna6 {
+    top: 600px;
+    left: 500px;
+}
+
+.fila7.columna7 {
+    top: 600px;
+    left: 600px;
+}
+
+.fila7.columna8 {
+    top: 600px;
+    left: 700px;
+}
+
+.fila8.columna1 {
+    top: 700px;
+    left: 0px;
+}
+
+.fila8.columna2 {
+    top: 700px;
+    left: 100px;
+}
+
+.fila8.columna3 {
+    top: 700px;
+    left: 200px;
+}
+
+.fila8.columna4 {
+    top: 700px;
+    left: 300px;
+}
+
+.fila8.columna5 {
+    top: 700px;
+    left: 400px;
+}
+
+.fila8.columna6 {
+    top: 700px;
+    left: 500px;
+}
+
+.fila8.columna7 {
+    top: 700px;
+    left: 600px;
+}
+
+.fila8.columna8 {
+    top: 700px;
+    left: 700px;
+}
