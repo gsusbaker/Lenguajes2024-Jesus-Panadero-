@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesús Panadero Pérez">
+    <title>Resumen de XML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0073e6;
+            font-size: 20px;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            display :inline-flex;
+            margin: 0 10px;
+            padding: 0px 6px;
+            background-color: #0073e6;
+            color: white;
+            border-radius: 19px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resumen de XML</h1>
+
+    </header>
+    <main>
+        <section>
+            <h2>¿Qué es XML?</h2>
+            <p>XML (eXtensible Markup Language) es un lenguaje de marcado que define reglas para estructurar datos de manera legible tanto para humanos como para máquinas.</p>
+        </section>
+        <section>
+            <h2>Características principales</h2>
+            <ul>
+                <li>Es autodescriptivo y fácil de entender.</li>
+                <li>Permite estructurar datos en jerarquías.</li>
+                <li>Es extensible, lo que significa que puedes crear tus propias etiquetas.</li>
+                <li>No depende de un software o plataforma específica.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Diferencias entre HTML y XML</h2>
+            <ul>
+                <li><strong>Propósito:</strong> HTML muestra contenido, XML transporta datos.</li>
+                <li><strong>Estructura:</strong> HTML usa etiquetas predefinidas, XML etiquetas personalizadas.</li>
+                <li><strong>Flexibilidad:</strong> HTML es menos estricto, XML exige cierres correctos.</li>
+                <li><strong>Enfoque:</strong> HTML diseña contenido, XML organiza datos.</li>
+                <li><strong>Uso:</strong> HTML para la web, XML para sistemas y aplicaciones.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Documentos Bien Formados en XML</h2>
+            <p>Cumplen las reglas sintácticas definidas por el estándar XML de W3C. Estas son las normas básicas:</p>
+            <ul>
+                <li><strong>Prólogo definido:</strong> Versión y codificación.</li>
+                <li><strong>Estructura de árbol:</strong> Un único nodo raíz.</li>
+                <li><strong>Etiquetas emparejadas:</strong> Apertura y cierre.</li>
+                <li><strong>Atributos entre comillas:</strong> Simples o dobles.</li>
+                <li><strong>Distingue mayúsculas de minúsculas.</strong></li>
+                <li><strong>Nombres de etiquetas:</strong> Similares a variables en programación.</li>
+                <li><strong>Comentarios:</strong> Fuera de etiquetas con <code>&lt;!-- comentario --&gt;</code>.</li>
+            </ul>
+            <h2>Aplicaciones para Trabajar con XML</h2>
+            <ul>
+                <li><a href="https://xml-copy-editor.sourceforge.io/" target="_blank">XML Copy Editor</a></li>
+                <li><a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml" target="_blank">Extensión XML Tools para Visual Studio Code</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Ejemplo básico de XML</h2>
+            <pre>
+&lt;libro&gt;
+    &lt;titulo&gt;Aprendiendo XML&lt;/titulo&gt;
+    &lt;autor&gt;Jesús Panadero&lt;/autor&gt;
+    &lt;año&gt;2025&lt;/año&gt;
+&lt;/libro&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Usos de XML</h2>
+            <p>XML se utiliza ampliamente en aplicaciones web, intercambio de datos, configuración de sistemas, y más funciones explicadas en clase .</p>
+        </section>
+        <section>
+            <h2>Enlaces a otros ejercicios</h2>
+            <nav>
+               
+                <a href="../ejercicio1XML/catalogo.xml">EJERCICIO 1 </a>
+                <a href="../ejercicio2XML/agenda.xml">EJERCICIO 2 </a>
+                <a href="/indice/index.html">INDEX</a>
+                <a href="../ejercicio3XML/menu.xml">>EJERCICIO 3 </a>
+                <a href="../ejercicio5XML/tarjeta.xml">EJERCICIO 5 </a>
+                <a href="../ejercicio6XML/vehiculo.xml">EJERCICIO 6 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 7 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 8 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 9 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 10 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 11 </a>
+                <a href="../ejercicio4XML/">EJERCICIO 12 </a>
+                <a href="/indice/index.html">INDEX</a>
+              
+              
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>Trabajo de clase por Jesús Panadero Pérez</p>
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+</html>

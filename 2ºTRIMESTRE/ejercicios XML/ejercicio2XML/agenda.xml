@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "dtd.dtd">
+<agenda>
+    <contacto>
+        <nombre>Jesús Panadero</nombre>
+        <telefono>123456789</telefono>
+        <email>jesus@example.com</email>
+        <direccion>Calle Mayor, 1</direccion>
+    </contacto>
+    <contacto>
+        <nombre>Gonzalo Martínez</nombre>
+        <telefono>987654321</telefono>
+        <email>gonzalo@example.com</email>
+        <direccion>Avenida Principal, 10</direccion>
+    </contacto>
+</agenda>

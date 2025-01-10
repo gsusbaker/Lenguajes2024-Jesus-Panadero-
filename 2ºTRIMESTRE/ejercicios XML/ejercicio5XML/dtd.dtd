@@ -1,0 +1,6 @@
+<!ELEMENT tarjeta (numero, titular, fecha_vencimiento, tipo, entidad_emisora)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT titular (#PCDATA)>
+<!ELEMENT fecha_vencimiento (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT entidad_emisora (#PCDATA)>

@@ -1,0 +1,7 @@
+<!ELEMENT dni (numero, nombre, apellidos, fecha_nacimiento, nacionalidad, sexo)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>

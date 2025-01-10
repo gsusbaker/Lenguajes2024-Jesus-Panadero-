@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ficha_vehiculo SYSTEM "dtd.dtd">
+<ficha_vehiculo>
+    <marca>Toyota</marca>
+    <modelo>Corolla</modelo>
+    <año>2020</año>
+    <matricula>1234ABC</matricula>
+    <tipo_combustible>Gasolina</tipo_combustible>
+    <potencia>120 CV</potencia>
+</ficha_vehiculo>

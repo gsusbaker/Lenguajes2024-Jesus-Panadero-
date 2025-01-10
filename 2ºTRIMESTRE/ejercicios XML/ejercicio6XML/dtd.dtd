@@ -1,0 +1,7 @@
+<!ELEMENT ficha_vehiculo (marca, modelo, año, matricula, tipo_combustible, potencia)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT tipo_combustible (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>

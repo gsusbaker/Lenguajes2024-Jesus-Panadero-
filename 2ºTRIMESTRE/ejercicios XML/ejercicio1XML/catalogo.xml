@@ -1,0 +1,10 @@
+<!DOCTYPE catalogo SYSTEM "dtd.dtd">
+<catalogo>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <año>1605</año>
+        <genero>Novela</genero>
+        <precio>19.99</precio>
+    </libro>
+    </catalogo>

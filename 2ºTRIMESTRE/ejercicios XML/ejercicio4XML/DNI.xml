@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dni SYSTEM "dtd.dtd">
+<dni>
+    <numero>12345678Z</numero>
+    <nombre>Juan</nombre>
+    <apellidos>Pérez Gómez</apellidos>
+    <fecha_nacimiento>1985-06-15</fecha_nacimiento>
+    <nacionalidad>Española</nacionalidad>
+    <sexo>M</sexo>
+</dni>

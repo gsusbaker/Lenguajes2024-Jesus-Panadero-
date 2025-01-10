@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "dtd.dtd">
+<menu>
+    <item>
+        <nombre>Ensalada César</nombre>
+        <descripcion>Lechuga, pollo, queso y aderezo césar</descripcion>
+        <precio>8.50</precio>
+        <categoria>Entrante</categoria>
+    </item>
+    <item>
+        <nombre>Solomillo a la parrilla</nombre>
+        <descripcion>Solomillo de ternera con guarnición</descripcion>
+        <precio>18.99</precio>
+        <categoria>Principal</categoria>
+    </item>
+</menu>

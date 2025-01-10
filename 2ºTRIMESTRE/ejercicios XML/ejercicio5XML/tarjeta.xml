@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tarjeta SYSTEM "dtd.dtd">
+<tarjeta>
+    <numero>1234-5678-9012-3456</numero>
+    <titular>María López</titular>
+    <fecha_vencimiento>2025-12</fecha_vencimiento>
+    <tipo>Visa</tipo>
+    <entidad_emisora>Banco Ejemplo</entidad_emisora>
+</tarjeta>
