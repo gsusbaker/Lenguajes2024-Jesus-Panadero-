@@ -2,83 +2,86 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Jesús Panadero Pérez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesús Panadero Pérez">
     <title>Trabajos de Jesús Panadero Pérez</title>
-    <link rel="stylesheet" href="hojadeestilos11.css">
     <style>
         body {
-            background-color: #121212;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298); 
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
-
         }
         header {
-            background-color:rgb(5, 5, 49);
+            background-color: rgb(5, 5, 49);
             padding: 20px;
             text-align: center;
-            position:  sticky;
+            position: sticky;
         }
         .logo {
             display: block;
             margin: 0 auto;
         }
         nav {
-            
             padding: 10px;
+            text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
+        .nav-button {
+            display: block;
+            margin: 10px auto;
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            background: linear-gradient(to right, #007bff, #66a3ff); 
+            border: none;
+            border-radius: 25px; 
+            text-decoration: none;
+            cursor: pointer;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.2s ease-in-out; 
         }
-    
-      
+        .nav-button:hover {
+            transform: scale(1.05); 
+            background: linear-gradient(to right, #66a3ff, #007bff); 
+        }
         main {
             padding: 20px;
         }
         section {
             background-color: rgb(5, 5, 49);
-            border: 1px solid #444444;
+            border: 1px solid #555555;
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
             text-align: center;
             font-size: 18px;
             width: 50%;
-           margin: 0;
-           margin-left: 25%;
-           align-items: center;
-           display: block;
+            margin-left: 25%;
+            display: block;
         }
         h2 {
             color: #f1f1f1;
         }
         footer {
-            background-color:rgb(5, 5, 49);
+            background-color: rgb(5, 5, 49);
             text-align: center;
             padding: 10px;
         }
     </style>
 </head>
 <body>
-  
     <header>
         <img src="../indice/images/MEDAC.jpg" width="80px" class="logo"> 
-        <h1>Trabajos de Jesús Panadero Pérez</h1>
+        <h1>Trabajos de Jesús Panadero Pérez - 2º TRIMESTRE</h1>
     </header>
     <nav>
-        <ul><span>
-            <li><a href="../resumen XML/index.html"> XML </a></li>
-            <li><a href=" /indice/index.html"> INDEX PRINCIPAL </a></li>
-    
-  
-
-        </ul>
+        <a href="/2ºTRIMESTRE/ejercicios XML/resumen XML/resumen.html" class="nav-button">XML</a>
+        <a href="/2ºTRIMESTRE/Validacion  Schema ML/validacion.html" class="nav-button">Validación de Schema XML</a>
+        <a href="/indice/index.html" class="nav-button">Index Principal</a>
     </nav>
-  
     <footer>
         <p>&copy; Jesús Panadero Pérez</p>
     </footer>

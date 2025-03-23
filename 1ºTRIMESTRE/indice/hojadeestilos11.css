@@ -1,31 +1,32 @@
-
-
 nav ul li {
     margin: 10px;
-    flex: 1 1 45%;  
+    flex: 1 1 45%; 
 }
 
-nav ul li a {
+.nav-button {
     display: block;
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-    color: #0082fc;
-    border-radius: 5px;
-
-    
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #007bff, #66a3ff); 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease-in-out; 
 }
-
-nav ul li a:hover {
-    background-color: white;
+.nav-button:hover {
+    transform: scale(1.05); 
+    background: linear-gradient(to right, #66a3ff, #007bff); 
 }
-
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(images/abstract-black-background-with-diagonal-lines-modern-dark-abstract-texture-design-for-presentations-or-business-free-vector.jpg);
+    background-color: #66a3ff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,7 +44,7 @@ header .logo {
     display: block;
     margin: 0 auto 15px;
     border-radius: 25px;
-    position:  sticky;
+    position: sticky;
 }
 
 h1 {
@@ -54,10 +55,9 @@ h1 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color:rgb(7, 7, 51) ;
+    background-color: rgb(7, 7, 51);
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-

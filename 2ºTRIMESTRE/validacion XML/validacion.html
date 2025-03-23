@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesús Panadero Pérez">
+    <title>Esquema XML con XSD</title>
+    <link rel="icon" href="/imagenes/icono.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        header {
+            background: #333;
+            color: #00aaff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #00aaff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #00aaff;
+            border-bottom: 2px solid #00aaff;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #77ccff;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #00aaff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0088cc;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #00aaff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Esquema XML con XSD
+    </header>
+    <nav>
+        <a href="#definicion">¿Qué es XSD?</a>
+        <a href="#estructura">Estructura</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#herramientas">Herramientas</a>
+    </nav>
+    <main>
+        <section id="definicion">
+            <h2>¿Qué es un Esquema XML?</h2>
+            <p>XSD (XML Schema Definition) es un lenguaje para definir la estructura de documentos XML, permitiendo establecer reglas precisas para su contenido.</p>
+        </section>
+        <section id="estructura">
+            <h2>Estructura de un XSD</h2>
+            <p>Los esquemas XML se almacenan en archivos <code>.xsd</code> y se asocian a documentos XML mediante el atributo <code>xsi:schemaLocation</code>.</p>
+        </section>
+        <section id="caracteristicas">
+            <h2>Características Principales</h2>
+            <h3>Tipos de Datos</h3>
+            <p>Los elementos pueden usar tipos como <code>xs:string</code>, <code>xs:integer</code> o <code>xs:boolean</code>.</p>
+            <h3>Definición de Estructuras</h3>
+            <p>Permite organizar los elementos en secuencias y combinaciones flexibles.</p>
+            <h3>Restricciones</h3>
+            <p>Define reglas como longitudes mínimas y máximas o valores permitidos.</p>
+        </section>
+        <section id="herramientas">
+            <h2>Herramientas de Validación</h2>
+            <p>Programas como XMLSpy y Oxygen XML Editor ayudan a comprobar la validez de un XML respecto a su XSD.</p>
+        </section>
+        <div class="button-container">
+            <a href="../indice/index.html" class="back-button">Volver al Índice</a>
+        </div>
+    </main>
+    <footer>
+        <p>Jesús Panadero Pérez - Curso 2025</p>
+    </footer>
+</body>
+</html>
