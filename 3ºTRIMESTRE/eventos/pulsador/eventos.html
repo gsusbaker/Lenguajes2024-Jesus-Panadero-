@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Panadero Pérez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Teclas</title>
+    <style>
+        nav ul li {
+            margin: 10px;
+            flex: 1 1 45%;  
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 25px; 
+            background: linear-gradient(to right, #007bff, #66a3ff); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.2s ease-in-out; 
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        body {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #66a3ff;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(5, 5, 49);
+            color: white;
+            position: sticky;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 25px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgb(5, 5, 49);
+            border: 1px solid #444444;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        #cuadro {
+            font-size: 60px;
+            margin-top: 50px;
+            padding: 80px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(5, 5, 49);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/3ºTRIMESTRE/eventos/images/MEDAC.jpg" alt="Logo" class="logo" width="100">
+        <h1>Detector de Teclas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pulsa una tecla (A-Z)</h2>
+      
+            <div id="cuadro"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Jesús Panadero Pérez
+    </footer>
+
+    <script>
+        // Obtenemos una referencia al div donde vamos a mostrar la letra
+        const cuadro = document.getElementById("cuadro");
+
+        // Evento que se activa cuando se presiona una tecla
+        document.addEventListener("keydown", function(event) {
+            const tecla = event.key; // Obtenemos la tecla presionada
+
+            // Verificacion de las teclas para evitar los simbolos y los numeros testeando
+            if (/^[a-zA-Z]$/.test(tecla)) {
+                // Convertimos la tecla a mayúscula y la mostramos en el cuadro
+                cuadro.textContent = tecla.toUpperCase();
+            }
+        });
+
+        // Evento que se activa cuando se suelta una tecla
+        document.addEventListener("keyup", function() {
+            // Limpiamos el contenido del cuadro
+            cuadro.textContent = "";
+        });
+      
+
+    </script>
+      <nav>
+        <ul>
+            <li><a href="/3ºTRIMESTRE/indice/index.html">VUELTA AL INDEX</a></li>
+
+
+        </ul>
+    </nav>
+</body>
+</html>

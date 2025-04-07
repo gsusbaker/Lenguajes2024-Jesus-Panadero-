@@ -59,4 +59,57 @@ footer {
     width: 100%;
     bottom: 0;
 }
+body {
+            
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 
+}
+header {
+    background-color:rgb(5, 5, 49);
+    padding: 20px;
+    text-align: center;
+    position:  sticky;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+main {
+    padding: 20px;
+}
+section {
+    background-color: rgb(5, 5, 49);
+    border: 1px solid #444444;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+   margin: 0;
+   margin-left: 25%;
+   align-items: center;
+   display: block;
+}
+h2 {
+    color: #f1f1f1;
+}
+footer {
+    background-color:rgb(5, 5, 49);
+    text-align: center;
+    padding: 10px;
+}

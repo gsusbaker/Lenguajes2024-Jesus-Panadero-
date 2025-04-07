@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cronómetro</title>
+
+  <style>
+    nav ul li {
+        margin: 10px;
+        flex: 1 1 45%;  
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 25px; 
+        background: linear-gradient(to right, #007bff, #66a3ff); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        transition: transform 0.2s ease-in-out; 
+    }
+
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    body {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #66a3ff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(5, 5, 49);
+        color: white;
+        position: sticky;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto 15px;
+        border-radius: 25px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        background-color: rgb(5, 5, 49);
+        border: 1px solid #444444;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #cuadro {
+        font-size: 60px;
+        margin-top: 50px;
+        padding: 80px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+        color: #f1f1f1;
+    }
+
+    #cronometro {
+      font-size: 48px;        
+      margin-bottom: 30px;   
+      text-align: center;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(5, 5, 49);
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    button:hover {
+        background-color: #0056b3; }
+        button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #007bff;  
+      color: white;
+      transition: background-color 0.3s;
+      
+    }
+</style>
+</head>
+<header>
+    <img src="/3ºTRIMESTRE/eventos/images/MEDAC.jpg" alt="Logo" class="logo" width="100">
+    <h1>Cronometro</h1>
+</header>
+<body>
+
+
+  <h1>Cronómetro</h1>
+
+
+  <div id="cronometro">00:00:00</div>
+
+  <!-- Botones para controlar el cronómetro -->
+  <button id="iniciar">Iniciar</button>
+  <button id="pausar">Pausar</button>
+  <button id="reiniciar">Reiniciar</button>
+
+  <script>
+    // Obtenemos las referencias de los elementos del HTML por su ID
+    const cronometro = document.getElementById("cronometro");
+    const btnIniciar = document.getElementById("iniciar");
+    const btnPausar = document.getElementById("pausar");
+    const btnReiniciar = document.getElementById("reiniciar");
+
+    // Variables que guardan el tiempo transcurrido
+    let milisegundos = 0;
+    let segundos = 0;
+    let minutos = 0;
+
+    // Variable que almacenará el intervalo del cronómetro
+    let intervalo = null;
+
+    // Función para mostrar el tiempo formateado en el HTML
+    function actualizarPantalla() {
+      // Si es menor de 10, agregamos un 0 delante
+      let m = minutos < 10 ? "0" + minutos : minutos;
+      let s = segundos < 10 ? "0" + segundos : segundos;
+      let ms = milisegundos < 10 ? "0" + milisegundos : milisegundos;
+
+      // Mostramos el tiempo en formato MM:SS:MS
+      cronometro.textContent = `${m}:${s}:${ms}`;
+    }
+
+    // Esta función se llama cada 100 milisegundos gracias a setInterval
+    function contarTiempo() {
+      milisegundos += 1; // Aumentamos los milisegundos
+
+      // Cada 10 décimas (milisegundos * 100 = 1 segundo), aumentamos los segundos
+      if (milisegundos === 10) {
+        milisegundos = 0;
+        segundos += 1;
+      }
+
+      // Si los segundos llegan a 60, aumentamos los minutos
+      if (segundos === 60) {
+        segundos = 0;
+        minutos += 1;
+      }
+
+      // Actualizamos el cronómetro en pantalla
+      actualizarPantalla();
+    }
+
+    // Evento cuando se hace clic en el botón "Iniciar"
+    btnIniciar.addEventListener("click", function() {
+      // Si no hay un intervalo activo, lo iniciamos
+      if (!intervalo) {
+        intervalo = setInterval(contarTiempo, 100); // Cada 100 milisegundos
+      }
+    });
+
+    // Evento cuando se hace clic en el botón "Pausar"
+    btnPausar.addEventListener("click", function() {
+      clearInterval(intervalo); // Detiene el cronómetro
+      intervalo = null;         // Lo dejamos nulo para poder reiniciar después
+    });
+
+    // Evento cuando se hace clic en el botón "Reiniciar"
+    btnReiniciar.addEventListener("click", function() {
+      clearInterval(intervalo);  // Detenemos el intervalo si estaba corriendo
+      intervalo = null;
+      milisegundos = 0; // Reiniciamos todas las variables de tiempo
+      segundos = 0;
+      minutos = 0;
+      actualizarPantalla(); // Volvemos a mostrar 00:00:00
+    });
+  </script>
+
+</body>
+<footer>
+    &copy; 2025 Jesús Panadero Pérez
+</footer>
+
+</html>
