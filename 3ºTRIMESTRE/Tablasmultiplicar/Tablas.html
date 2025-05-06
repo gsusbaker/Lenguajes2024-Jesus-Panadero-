@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tablas de Multiplicar</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #66a3ff;  /* Fondo azul claro */
+            color: hsl(0, 0%, 20%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: rgb(5, 5, 49);  /* Azul más oscuro */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* Sección de la calculadora */
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título de la sección */
+        section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del cuadro de la calculadora */
+        #cuadro {
+            background-color: #f0f0f0;
+            font-size: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Estilo de los botones */
+        button {
+            padding: 15px 25px;
+            background-color: #007bff;  /* Azul más brillante */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(5, 5, 49);  /* Azul más oscuro para hover */
+        }
+
+        /* Estilo del botón de vuelta al índice */
+        #btn-volver {
+            background-color: rgb(5, 5, 49);
+            margin-top: 20px;
+        }
+
+        #btn-volver:hover {
+            background-color: #1f4ed1;  /* Verde más oscuro para hover */
+        }
+
+        /* Estilo para el footer */
+        footer {
+            background-color: rgb(5, 5, 49);  /* Azul más oscuro */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo de las tablas generadas */
+        .tabla {
+            color: #333;  /* Color más oscuro para el texto */
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .tabla p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Generador de Tablas de Multiplicar</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>Genera las Tablas de Multiplicar</h2>
+            <label for="numero">Número: </label>
+            <input type="number" id="numero" min="1" /><br /><br />
+            <button onclick="calcular()">Calcular</button><br /><br />
+            <div id="resultado" class="tabla"></div>
+
+            <!-- Botón de vuelta al índice -->
+            <br />
+            <a href="/3ºTRIMESTRE/indice/index.html"><button id="btn-volver">Volver al Índice</button></a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jesus Panadero Perez</p>
+    </footer>
+
+    <script>
+      function calcular() {
+        const numero = Number(document.getElementById("numero").value);
+        const resultadoId = "resultado" + numero;
+        const resultadoElement = document.createElement("div");
+        resultadoElement.id = resultadoId;
+        document.body.appendChild(resultadoElement);
+        
+        if (isNaN(numero) || numero < 1) {
+          resultadoElement.innerHTML = "Por favor, ingresa un número válido mayor que 0.";
+          return;
+        }
+
+        resultadoElement.innerHTML = `<h2>Tabla de multiplicar del ${numero}</h2>`;
+        for (let i = 0; i <= 10; i++) {
+          resultadoElement.innerHTML += `<p>${numero} X ${i} = ${numero * i}</p>`;
+        }
+      }
+    </script>
+
+</body>
+</html>
