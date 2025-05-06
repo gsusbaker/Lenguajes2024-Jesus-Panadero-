@@ -12,13 +12,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: rgb(5, 5, 49);
             padding: 20px;
             text-align: center;
             position: sticky;
+            top: 0;
+            z-index: 10;
         }
         .logo {
             display: block;
@@ -30,7 +34,7 @@
         }
         .nav-button {
             display: block;
-            margin: 10px auto;
+            margin: 15px auto; /* Increased margin between buttons */
             padding: 12px 20px;
             font-size: 1rem;
             color: #ffffff;
@@ -49,6 +53,7 @@
         }
         main {
             padding: 20px;
+            flex-grow: 1; /* Ensures main content area grows to take available space */
         }
         section {
             background-color: rgb(5, 5, 49);
@@ -69,9 +74,12 @@
             background-color: rgb(5, 5, 49);
             text-align: center;
             padding: 10px;
-    
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
         }
-        img{
+        img {
             border-radius: 20%;
         }
     </style>
@@ -86,6 +94,7 @@
         <a href="/3ºTRIMESTRE/eventos/pulsador/eventos.html" class="nav-button">Eventos</a>
         <a href="/3ºTRIMESTRE/ejericicioContador/Contador.html" class="nav-button">Contador de edad</a>
         <a href="/3ºTRIMESTRE/Calculadorarota/Calculadora.html" class="nav-button">Calculadora Rota</a>
+        <a href="/3ºTRIMESTRE/Cajas/cajas.html" class="nav-button">Cajas</a>
         <a href="/3ºTRIMESTRE/Tablasmultiplicar/Tablas.html" class="nav-button">Tablas de multiplicar</a>
         <a href="/indice/index.html" class="nav-button">Index Principal</a>
     </nav>

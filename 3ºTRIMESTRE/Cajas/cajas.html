@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto para Cajas Personalizadas</title>
+    <link rel="stylesheet" href="cajas.css">
+</head>
+<body>
+    <header>
+        <h1>Presupuesto para Cajas Personalizadas</h1>
+    </header>
+
+    <main>
+        <section id="calculo">
+            <h2>Sección de Cálculo</h2>
+            <label for="ancho">Ancho (cm):</label>
+            <input type="number" id="ancho" required><br>
+
+            <label for="alto">Alto (cm):</label>
+            <input type="number" id="alto" required><br>
+
+            <label for="largo">Largo (cm):</label>
+            <input type="number" id="largo" required><br>
+
+            <label for="material">Material:</label>
+            <select id="material">
+                <option value="plastico">Plástico</option>
+                <option value="carton">Cartón</option>
+                <option value="madera">Madera</option>
+            </select><br>
+
+            <button onclick="calcularPresupuesto()">Calcular</button>
+        </section>
+
+        <section id="resultados">
+            <h2>Sección de Resultados</h2>
+            <p id="dimensiones"></p>
+            <p id="volumen"></p>
+            <p id="superficie"></p>
+            <p id="materialSeleccionado"></p>
+            <p id="precio"></p>
+            <p id="precioSinIVA"></p>
+        </section>
+
+        <section id="configuracion">
+            <h2>Sección de Configuración</h2>
+            <label for="precioBase">Precio base por m³:</label>
+            <input type="number" id="precioBase" value="1"><br>
+
+            <label for="incrementoPlastico">Incremento % para Plástico:</label>
+            <input type="number" id="incrementoPlastico" value="20"><br>
+
+            <label for="incrementoCarton">Incremento % para Cartón:</label>
+            <input type="number" id="incrementoCarton" value="10"><br>
+
+            <label for="incrementoMadera">Incremento % para Madera:</label>
+            <input type="number" id="incrementoMadera" value="50"><br>
+
+            <label for="iva">IVA %:</label>
+            <input type="number" id="iva" value="10"><br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Jesus Panadero Perez</p>
+    </footer>
+
+    <!-- Botón de vuelta al índice -->
+    <a href="/3ºTRIMESTRE/indice/index.html">
+        <button id="btn-volver" class="boton-lateral">Volver al Índice</button>
+    </a>
+
+    <script src="cajas.js"></script>
+</body>
+</html>

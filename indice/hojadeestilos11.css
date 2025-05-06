@@ -1,25 +1,36 @@
-
+/* Ajuste del nav para que los botones ocupen toda la pantalla */
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones a través del espacio disponible */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
 
 nav ul li {
     margin: 10px;
-    flex: 1 1 45%;  
+    flex: 1; /* Hace que cada botón ocupe el mismo espacio */
 }
 
+/* Estilo de los enlaces dentro de los botones */
 nav ul li a {
     display: block;
     padding: 20px;
     text-align: center;
     color: #ffffff;
-    border-radius: 25px; 
-    background: linear-gradient(to right, #007bff, #66a3ff); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.2s ease-in-out; 
+    border-radius: 25px;
+    background: linear-gradient(to right, #007bff, #66a3ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
+}
 
+/* Efecto hover para los botones */
 nav ul li a:hover {
     background-color: white;
 }
-}
 
+/* Estilo general del cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -28,69 +39,53 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
 }
 
+/* Estilo del encabezado */
 header {
     text-align: center;
     padding: 20px;
     background-color: rgb(7, 7, 51);
     color: white;
     position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .logo {
     display: block;
     margin: 0 auto 15px;
     border-radius: 25px;
-    position:  sticky;
 }
 
+/* Título */
 h1 {
     margin: 0;
     font-size: 2em;
 }
 
+/* Estilo del footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color:rgb(7, 7, 51) ;
+    background-color: rgb(7, 7, 51);
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-body {
-            
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
 
-}
-header {
-    background-color:rgb(5, 5, 49);
-    padding: 20px;
-    text-align: center;
-    position:  sticky;
-}
-.logo {
-    display: block;
-    margin: 0 auto;
-}
-nav {
-    
-    padding: 10px;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-
+/* Sección principal de contenido */
 main {
     padding: 20px;
+    flex-grow: 1; /* Asegura que el contenido principal ocupe el espacio restante */
 }
+
+/* Estilo de las secciones */
 section {
     background-color: rgb(5, 5, 49);
     border: 1px solid #444444;
@@ -100,16 +95,11 @@ section {
     text-align: center;
     font-size: 18px;
     width: 50%;
-   margin: 0;
-   margin-left: 25%;
-   align-items: center;
-   display: block;
+    margin-left: 25%;
+    display: block;
 }
+
+/* Estilo de los encabezados de las secciones */
 h2 {
     color: #f1f1f1;
-}
-footer {
-    background-color:rgb(5, 5, 49);
-    text-align: center;
-    padding: 10px;
 }

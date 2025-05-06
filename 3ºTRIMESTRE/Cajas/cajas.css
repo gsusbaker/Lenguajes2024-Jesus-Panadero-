@@ -1,0 +1,124 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #66a3ff;  /* Fondo azul claro */
+    color: hsl(0, 0%, 20%);
+}
+
+/* Header */
+header {
+    background-color: rgb(5, 5, 49);  /* Azul más oscuro */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sección de la calculadora */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+section h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs y select */
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo del botón */
+button {
+    padding: 15px 25px;
+    background-color: #007bff;  /* Azul más brillante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(5, 5, 49);  /* Azul más oscuro para hover */
+}
+
+/* Sección de resultados */
+#resultados p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Sección de configuración */
+#configuracion {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: rgb(5, 5, 49);  /* Azul más oscuro */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botón lateral */
+.boton-lateral {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: rgb(5, 5, 49);  /* Azul más oscuro para hover */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    z-index: 1000;
+}
+
+.boton-lateral:hover {
+    background-color: #164cdf;
+}

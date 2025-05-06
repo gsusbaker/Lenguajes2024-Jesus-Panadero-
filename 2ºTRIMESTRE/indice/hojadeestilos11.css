@@ -1,63 +1,76 @@
-
-
-nav ul li {
-    margin: 10px;
-    flex: 1 1 45%;  
-}
-
-nav ul li a {
-    display: block;
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-    color: #0082fc;
-    border-radius: 5px;
-
-    
-}
-
-nav ul li a:hover {
-    background-color: white;
-}
-
-
 body {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(images/abstract-black-background-with-diagonal-lines-modern-dark-abstract-texture-design-for-presentations-or-business-free-vector.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 header {
-    text-align: center;
+    background-color: rgb(5, 5, 49);
     padding: 20px;
-    background-color: rgb(7, 7, 51);
-    color: white;
+    text-align: center;
     position: sticky;
+    top: 0;
+    z-index: 10;
 }
-
-header .logo {
+.logo {
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto;
+}
+nav {
+    padding: 10px;
+    text-align: center;
+}
+.nav-button {
+    display: block;
+    margin: 15px auto; /* Increased margin between buttons */
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #007bff, #66a3ff);
+    border: none;
     border-radius: 25px;
-    position:  sticky;
+    text-decoration: none;
+    cursor: pointer;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
 }
-
-h1 {
-    margin: 0;
-    font-size: 2em;
+.nav-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #66a3ff, #007bff);
 }
-
+main {
+    padding: 20px;
+    flex-grow: 1; /* Ensures main content area grows to take available space */
+}
+section {
+    background-color: rgb(5, 5, 49);
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+}
+h2 {
+    color: #f1f1f1;
+}
 footer {
+    background-color: rgb(5, 5, 49);
     text-align: center;
     padding: 10px;
-    background-color:rgb(7, 7, 51) ;
-    color: white;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+    color: #fff;
 }
-
+img {
+    border-radius: 20%;
+}
