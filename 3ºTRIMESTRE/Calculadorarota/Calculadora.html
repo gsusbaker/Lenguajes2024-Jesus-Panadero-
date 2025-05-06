@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Rota</title>
+    <link rel="stylesheet" href="Calculadora.css">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/MEDAC.jpg" alt="Logo JavaScript" width="100">
+        <h1>Calculadora Rota</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Calculadora Rota</h2>
+            <div id="cuadro">
+                <input type="text" id="resultado" disabled>
+                <!-- Botones numerales -->
+                <button onclick="agregarNumero(7)">7</button>
+                <button onclick="agregarNumero(8)">8</button>
+                <button onclick="agregarNumero(9)">9</button>
+                <button onclick="agregarNumero(4)">4</button>
+                <button onclick="agregarNumero(5)">5</button>
+                <button onclick="agregarNumero(6)">6</button>
+                <button onclick="agregarNumero(1)">1</button>
+                <button onclick="agregarNumero(2)">2</button>
+                <button onclick="agregarNumero(3)">3</button>
+                <button onclick="agregarNumero(0)">0</button>
+                <button onclick="agregarNumero('.')">.</button>
+                <!-- Botones de operaciones -->
+                <button onclick="operar('+')">+</button>
+                <button onclick="operar('-')">-</button>
+                <button onclick="operar('*')">*</button>
+                <button onclick="operar('/')">/</button>
+                <!-- Botones funcionales -->
+                <button onclick="calcular()">=</button>
+                <button onclick="limpiar()">C</button>
+                <button onclick="borrar()">CE</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        &copy; 2025 Jesús Panadero Pérez
+    </footer>
+
+    <script src="Calculadora.js"></script>
+</body>
+</html>
