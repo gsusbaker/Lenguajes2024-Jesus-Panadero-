@@ -8,37 +8,40 @@
   <link rel="stylesheet" href="eventos.css" />
 </head>
 <body>
+  <!-- Encabezado -->
   <header>Destino Vacacional</header>
 
-  
-
   <main>
+    <!-- Mensaje que cambia según el destino -->
     <h2 id="mensaje">¡Me voy de vacaciones!</h2>
 
-    <div class="contenedor-unicornio" id="zona-inicial">
-      <img id="unicornio" src="./imagenes/unicornio.png" draggable="true" alt="Unicornio" />
+    <!-- Zona donde aparece el perro que se puede arrastrar -->
+    <div class="contenedor-perro" id="zona-inicial">
+      <img id="perro" src="./images/perro1.png" draggable="true" alt="Perro" />
     </div>
 
+    <!-- Los destinos donde el perro se puede colocar -->
     <div class="destinos">
       <div class="destino" data-lugar="la playa">
-        <img src="./imagenes/playa.jpg" alt="Playa" />
+        <img src="./images/playa1.avif" alt="Playa" />
       </div>
       <div class="destino" data-lugar="el lago">
-        <img src="./imagenes/lago.jpg" alt="Lago" />
+        <img src="./images/lago1.jpg" alt="Lago" />
       </div>
       <div class="destino" data-lugar="el bosque">
-        <img src="./imagenes/bosque.jpg" alt="Bosque" />
+        <img src="./images/bosque1.jpg" alt="Bosque" />
       </div>
       <div class="destino" data-lugar="la ciudad">
-        <img src="./imagenes/ciudad.jpg" alt="Ciudad" />
+        <img src="./images/ciudad1.jpg" alt="Ciudad" />
       </div>
     </div>
   </main>
 
+  <!-- Pie de página con el autor -->
   <footer>
     <p>Creado por <strong>Jesús Panadero</strong></p>
   </footer>
-  
-  <script src="script.js"></script>
+
+  <script src="eventos.js"></script>
 </body>
 </html>
