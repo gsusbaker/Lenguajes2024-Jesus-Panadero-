@@ -1,24 +1,24 @@
-const perro = document.getElementById("perro");  // Se cambió de unicornio a perro
+const perro = document.getElementById("perro");  
 const destinos = document.querySelectorAll(".destino");
 const mensaje = document.getElementById("mensaje");
 const zonaInicial = document.getElementById("zona-inicial");
 
 perro.addEventListener("dragstart", (e) => {
-  e.dataTransfer.setData("text/plain", "perro");  // Cambié la data transfer a perro
+  e.dataTransfer.setData("text/plain", "perro");  
 });
 
 destinos.forEach(destino => {
   destino.addEventListener("dragover", (e) => {
-    e.preventDefault();  // Permite que el destino acepte el drag
+    e.preventDefault(); 
   });
 
   destino.addEventListener("drop", (e) => {
     e.preventDefault();
-    destino.appendChild(perro);  // Coloca el perro en el destino
-    perro.classList.add("perro-centro");  // Añadir clase para posicionar el perro
+    destino.appendChild(perro);  
+    perro.classList.add("perro-centro");  
 
-    // Cambiar el mensaje dependiendo del destino
+    
     const lugar = destino.dataset.lugar;
-    mensaje.textContent = `¡Me voy a ${lugar}!`;  // Actualizar mensaje
+    mensaje.textContent = `¡Me voy a ${lugar}!`;  
   });
 });

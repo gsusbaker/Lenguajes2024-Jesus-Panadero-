@@ -14,14 +14,16 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
 header, footer {
   background-color: rgb(5, 5, 49);  /* Azul más oscuro */
   color: white;
   text-align: center;
-  padding: 15px 0;
-  font-size: 1.5em;
+  padding: 20px;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 main {
