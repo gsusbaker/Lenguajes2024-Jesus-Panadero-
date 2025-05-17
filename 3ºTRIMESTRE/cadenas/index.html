@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta name="author" content="Jesús Panadero Pérez">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadenas de texto</title>
+  <link rel="stylesheet" href="caadenas.css" />
+</head>
+<body>
+  <header>
+    <h1>Ejercicios JavaScript</h1>
+  </header>
+
+  <main>
+    <section>
+      <input type="text" id="cadena" placeholder="Escribe una frase aquí" />
+      <button onclick="procesarCadena()">Procesar</button>
+
+      <div class="resultado">
+        <p><strong>Texto original:</strong> <span id="original"></span></p>
+        <p><strong>Longitud:</strong> <span id="longitud"></span></p>
+        <p><strong>Número de palabras:</strong> <span id="palabras"></span></p>
+        <p><strong>Mayúsculas:</strong> <span id="mayus"></span></p>
+        <p><strong>Minúsculas:</strong> <span id="minus"></span></p>
+        <p><strong>Capitalizado:</strong> <span id="capital"></span></p>
+        <p><strong>Primer carácter:</strong> <span id="primero"></span></p>
+        <p><strong>Último carácter:</strong> <span id="ultimo"></span></p>
+        <p><strong>Concatenando con " JS":</strong> <span id="concat"></span></p>
+        <p><strong>Contiene "a":</strong> <span id="incluye"></span></p>
+        <p><strong>Reemplazar "a" por "@":</strong> <span id="reemplazo"></span></p>
+        <p><strong>Subcadena (0-5):</strong> <span id="subcadena"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>  &copy; 2025 Jesús Panadero Pérez
+</footer>
+
+  <script src="cadenas.js"></script>
+</body>
+</html>

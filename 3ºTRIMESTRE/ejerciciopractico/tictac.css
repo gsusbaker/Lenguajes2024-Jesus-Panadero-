@@ -1,0 +1,69 @@
+header {
+    background-color: #0330c5;
+    color: #fff;
+    padding: 20px;
+    text-align: top;
+    display:flex;
+    align-items: auto;
+    justify-content:center;
+    width:100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+      .tablero {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .casilla {
+        width: 100%;
+        height: 100%;
+        background-color: #eee;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+
+      .jugador1 {
+        background-image: url(jugador1.png);
+      }
+
+      .jugador2 {
+        background-image: url(jugador2.png);
+      }
+      .tablero{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 20px auto;
+      }
+      #mensajeTurno {
+        margin-top: 50px;
+        color: #0300bb;
+        font-weight: bold;
+        align-items: center;
+    }
+      #reiniciar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0b08c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0b08c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+#reiniciar:hover {
+    background-color: #2a0592;
+}

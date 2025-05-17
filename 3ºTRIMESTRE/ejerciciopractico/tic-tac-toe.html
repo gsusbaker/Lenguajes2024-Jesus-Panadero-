@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="tictac.css">
+   
+    <header>
+      <h2>TIC-TAC-TOE</h2>
+    </header>
+  </head>
+  <body>
+
+    <p id="mensajeTurno">Turno de: Jugador X</p>
+
+    <div class="tablero">
+      <div class="casilla" onclick="jugada(1)"></div>
+      <div class="casilla" onclick="jugada(2)"></div>
+      <div class="casilla" onclick="jugada(3)"></div>
+      <div class="casilla" onclick="jugada(4)"></div>
+      <div class="casilla" onclick="jugada(5)"></div>
+      <div class="casilla" onclick="jugada(6)"></div>
+      <div class="casilla" onclick="jugada(7)"></div>
+      <div class="casilla" onclick="jugada(8)"></div>
+      <div class="casilla" onclick="jugada(9)"></div>
+      
+    </div>
+
+
+
+    <button id="reiniciar">Reiniciar Juego</button>
+    <button id="reset">RESET</button>
+
+
+
+    <div id="marcador">
+      <p>J1 : <span id="marcadorX">0</span> -   ----|---- J2 : <span id="MarcadorO">0</span></p>
+    </div>
+  
+
+    
+
+    
+
+    <script src="tictac.js"></script>
+    
+  </body>
+</html>

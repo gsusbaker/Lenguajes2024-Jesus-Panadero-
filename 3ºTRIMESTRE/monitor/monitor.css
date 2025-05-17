@@ -1,0 +1,120 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #66a3ff;
+    color: hsl(0, 0%, 20%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgb(5, 5, 49);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Sección del monitor */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+section h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Zona interactiva */
+#zona-interactiva {
+    border: 2px dashed #007bff;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+}
+
+#circulo {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    cursor: grab;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(5, 5, 49);
+}
+
+/* Historial */
+#historial {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#historial h3 {
+    margin-bottom: 10px;
+}
+
+#lista-eventos {
+    list-style: none;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(5, 5, 49);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

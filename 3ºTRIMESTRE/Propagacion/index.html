@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+          <meta name="author" content="Jesús Panadero Pérez">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos - stopPropagation & preventDefault</title>
+  <link rel="stylesheet" href="propagacion.css" />
+</head>
+<body>
+  <header>
+    <h1>Eventos en JavaScript</h1>
+  
+  </header>
+
+  <main>
+    <section>
+      <h2>Demostración de <code>stopPropagation()</code></h2>
+      <div id="padre">
+        <p>Padre</p>
+        <button id="hijo1">Hijo 1 (con stopPropagation)</button>
+        <button id="hijo2">Hijo 2 (sin stopPropagation)</button>
+      </div>
+
+      <h2>Demostración de <code>preventDefault()</code></h2>
+      <button id="toggle-enlace">Desactivar/activar enlace</button><br/><br/>
+      <a href="https://www.w3schools.com" id="enlace" target="_blank">Ir a W3Schools</a>
+    </section>
+  </main>
+
+  <footer>
+  &copy; 2025 Jesús Panadero Pérez
+  </footer>
+
+  <script src="propacion.js"></script>
+</body>
+</html>

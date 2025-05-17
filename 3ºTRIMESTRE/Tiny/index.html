@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editor con TinyMCE y html2pdf</title>
+  <link rel="stylesheet" href="tiny.css" />
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Página con TinyMCE y html2pdf</h1>
+  </header>
+
+  <main>
+    <section>
+      <textarea id="editor">Esto es un editor de texto<br><ol><li>Uno</li><li>Dos</li><li>Tres</li></ol></textarea>
+
+      <div style="margin-top: 20px;">
+        <button onclick="pasarTexto()">Pasar texto a div</button>
+        <button onclick="generarPDF()">📄 Generar PDF</button>
+      </div>
+
+      <div id="resultado" class="resultado" style="margin-top: 20px;"></div>
+    </section>
+  </main>
+
+  <footer>Autor</footer>
+
+  <script src="tiny.js"></script>
+</body>
+</html>

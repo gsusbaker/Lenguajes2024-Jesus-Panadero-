@@ -139,6 +139,18 @@
     border: none;
     outline: none;
   }
+  #zona-interactiva {
+    border: 2px dashed #007bff;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+}
+
   
   /* Botón estilizado */
   button {

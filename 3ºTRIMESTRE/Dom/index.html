@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="author" content="Jesús Panadero Pérez">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Manipulación del DOM</title>
+    <link rel="stylesheet" href="dom.css" />
+</head>
+<body>
+    <header>
+        <h1>Manipulación del DOM</h1>
+       
+    </header>
+
+    <main>
+        <section>
+            <h2>Contar DIVs en la Página</h2>
+            <button onclick="contarDivs()">Contar DIVs</button>
+            <div class="resultado">
+                <h3>Resultado:</h3>
+                <p id="totalDivs">Total de divs: </p>
+                <p id="conContenido">Con contenido: </p>
+                <p id="vacios">Vacíos: </p>
+            </div>
+            <div class="card">Hola</div>
+            <div class="card"></div>
+            <div class="card"> </div>
+            <div class="card"></div>
+        </section>
+
+        <section>
+            <h2>Modificar Clases del DOM</h2>
+            <div class="botonera">
+                <button onclick="modificarClase('bg')">Color Fondo</button>
+                <button onclick="modificarClase('borde')">Bordes Punteados</button>
+                <button onclick="modificarClase('redondo')">Bordes Redondeados</button>
+                <button onclick="modificarClase('aparecer')">Aparecer</button>
+                <button onclick="modificarClase('desaparecer')">Desaparecer</button>
+                <button onclick="modificarClase('grande')">Tamaño Grande</button>
+                <button onclick="modificarClase('chico')">Tamaño Chico</button>
+            </div>
+            <div id="tarjeta" class="card modificable">Modifica la tarjeta</div>
+        </section>
+    </main>
+
+    <footer>
+  &copy; 2025 Jesús Panadero Pérez
+    </footer>
+
+    <script src="dom.js"></script>
+</body>
+</html>
