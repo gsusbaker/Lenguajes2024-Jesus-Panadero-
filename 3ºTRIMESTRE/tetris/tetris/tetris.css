@@ -1,0 +1,145 @@
+/* tetris.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f1fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.controles-superiores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.piezas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pieza {
+  width: 60px;
+  height: auto;
+  cursor: grab;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.pieza:hover {
+  transform: scale(1.1);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.zona-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.zona-izquierda, .zona-derecha {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(25, 118, 210, 0.2);
+  flex: 1;
+  min-width: 300px;
+}
+
+#historial-piezas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+  min-height: 150px;
+  border: 2px dashed #64b5f6;
+  border-radius: 8px;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  text-align: center;
+  color: #1976d2;
+  font-style: italic;
+}
+
+#historial-piezas img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead th, tfoot td {
+  background-color: #bbdefb;
+}
+
+th, td {
+  border: 1px solid #90caf9;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+}
+
+footer {
+  font-size: 0.9rem;
+}

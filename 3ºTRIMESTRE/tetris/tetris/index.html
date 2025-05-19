@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presupuesto Tetris</title>
+  <link rel="stylesheet" href="tetris.css" />
+</head>
+<body>
+  <header>
+    <h1>Presupuesto Tetris</h1>
+  </header>
+  <main>
+    <!-- Controles superiores -->
+    <div class="controles-superiores">
+      <div class="piezas">
+<img src="images/1x11x1.png" alt="1x11x1" class="pieza" draggable="true">
+        <img src="images/2x2.png" alt="2x2" class="pieza" draggable="true">
+        <img src="images/2x3.png" alt="2x3" class="pieza" draggable="true">
+        <img src="images/2z2.png" alt="2z2" class="pieza" draggable="true">
+        <img src="images/3x1.png" alt="3x1" class="pieza" draggable="true">
+        <img src="images/4.png" alt="4" class="pieza" draggable="true">
+      </div>
+      <div class="acciones">
+        <button id="borrar">Borrar Presupuesto</button>
+        <label>Margen Comercial (%) <input type="number" id="margen" min="0" value="0"></label>
+        <label>IVA (%) <input type="number" id="iva" min="0" value="21"></label>
+      </div>
+    </div>
+
+    <!-- Zona principal dividida -->
+    <div class="zona-principal">
+      <!-- Columna izquierda: historial visual -->
+      <div class="zona-izquierda" id="zona-piezas">
+        <h3>Información</h3>
+        <div id="historial-piezas"><p id="drop-hint">Suelta aquí tus piezas</p>
+</div>
+      </div>
+
+      <!-- Columna derecha: tabla de presupuesto -->
+      <div class="zona-derecha">
+        <h3>Presupuesto</h3>
+        <table id="tabla-presupuesto">
+          <thead>
+            <tr>
+              <th>Pieza</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <!-- Relleno dinámico -->
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2">Total Bruto</td><td id="total-bruto">0.00 €</td></tr>
+            <tr><td colspan="2">+ Margen Comercial</td><td id="total-margen">0.00 €</td></tr>
+            <tr><td colspan="2">+ IVA</td><td id="total-iva">0.00 €</td></tr>
+            <tr><td colspan="2"><strong>Total Neto</strong></td><td id="total-neto"><strong>0.00 €</strong></td></tr>
+          </tfoot>
+        </table>
+        <button id="actualizar">Actualizar Totales</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+       <p>&copy; Jesus Panadero Perez</p>  </footer>
+  <script src="tetris.js"></script>
+</body>
+</html>
